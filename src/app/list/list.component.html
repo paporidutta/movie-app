@@ -1,0 +1,17 @@
+
+    
+    <div class=" container-fluid  popular">
+      <ul>
+        <div class="container">
+    <div *ngFor="let search of ref.results | paginate :{ itemsPerPage:10, currentPage: p }"  >
+            <app-display [ref]="search"></app-display>
+ 
+    </div>
+        </div>
+    </ul>
+    
+    
+   
+    </div>
+    <pagination-controls (pageChange)="p =$event"></pagination-controls>
+  

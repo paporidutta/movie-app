@@ -1,0 +1,22 @@
+<div class="container " id="now">
+
+
+      <h3 class="text-center play">Now Playing Movies</h3>
+   
+    <div class="container">
+      <div class="row" *ngIf="nowPlayingMovies">
+        <div *ngFor="let movie of nowPlayingMovies.results, let i = index">
+          <div *ngIf="i <= 8" class="col-lg-4 col-md-4 col-sm-2 text-center">
+            <a href="#" routerLink="/movie/{{movie.id}}" >
+              <img *ngIf="movie.poster_path" class=".img-fluid. max-width: 100%;" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}">
+              <img *ngIf="!movie.poster_path" class="img-thumbnail" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
+            </a>
+            <div class=" book"><a href="">BOOK</a></div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>

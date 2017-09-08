@@ -1,0 +1,12 @@
+.feature
+{
+  color:white;
+}
+.mylayout
+{
+    background-image: url(../../mylay.jpg);
+}
+.w-100
+{
+  position: relative;
+}

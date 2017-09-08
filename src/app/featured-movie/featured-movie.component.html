@@ -1,0 +1,62 @@
+
+  <h2 class="text-center feature">Featured Movies</h2>
+ <div class="container" id="con" >
+<div class="row" id="movies">
+    
+         <div *ngFor="let movie of featuredMovies.results,let i = index"class="col-lg-3 col-md-3 col-sm-6">
+            <article *ngIf="i===0"class="card">
+            <header class="title-header">
+              <h3>{{movie.title}}</h3>
+            </header>
+            <div class="card-block" >
+              <div class="img-card">
+                  <img *ngIf="movie.poster_path" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Movie" class="w-100" />
+                  <img *ngIf="!movie.poster_path" class="w-100" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
+              </div>
+              <!-- <p class="tagline card-text text-xs-center">{{movie.overview}}</p> -->
+              <a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i><small> Watch Now</small></a>
+            </div>
+          </article>
+       
+            <article *ngIf="i===1"class="card">
+            <header class="title-header">
+              <h3>{{movie.title}}</h3>
+            </header>
+            <div class="card-block">
+              <div class="img-card">
+                  <img *ngIf="movie.poster_path" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Movie" class="w-100" />
+                  <img *ngIf="!movie.poster_path" class="w-100" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
+              </div>
+              <!-- <p class="tagline card-text text-xs-center">{{movie.overview}}</p> -->
+              <a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i><small> Watch Now</small></a>
+            </div>
+          </article>
+          <article *ngIf="i===2"class="card">
+              <header class="title-header ">
+                <h3>{{movie.title}}</h3>
+              </header>
+              <div class="card-block">
+                <div class="img-card">
+                    <img *ngIf="movie.poster_path" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Movie" class="w-100" />
+                    <img *ngIf="!movie.poster_path" class="w-100" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
+                </div>
+                <!-- <p class="tagline card-text text-xs-center">{{movie.overview}}</p> -->
+                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i><small> Watch Now</small></a>
+              </div>
+            </article>
+            <article *ngIf="i===3"class="card">
+                <header class="title-header">
+                  <h3>{{movie.title}}</h3>
+                </header>
+                <div class="card-block">
+                  <div class="img-card">
+                      <img *ngIf="movie.poster_path" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Movie" class="w-100" />
+                      <img *ngIf="!movie.poster_path" class="w-100" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
+                  </div>
+                  <!-- <p class="tagline card-text text-xs-center">{{movie.overview}}</p> -->
+                  <a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i><small> Watch Now</small></a>
+                </div>
+              </article>
+        </div> 
+</div>
+ </div>

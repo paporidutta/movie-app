@@ -1,0 +1,23 @@
+
+<div class="col-sm-6 col-md-6 col-lg-6 mt-4">
+    <div class="card  ">
+        <img *ngIf="ref.poster_path" class="card-img-top" src="https://image.tmdb.org/t/p/w300/{{ref.poster_path}}">
+        <img *ngIf="!ref.poster_path" class="card-img-top" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
+        <div class="card-block">
+            <figure class="profile">
+                <img src="https://image.tmdb.org/t/p/w300/{{ref.poster_path}}" class="profile-avatar" alt="">
+            </figure>
+            <h4 class="card-title mt-3">{{ref.title}}</h4>
+            
+            <div>
+               <small> Release Date: {{ref.release_date}}</small>
+               
+            </div>
+        </div>
+        <div class="card-footer">
+            <small> Rating: {{ref.vote_average}}</small>
+            <button class="btn btn-info float-right btn-sm"(click)="addfav(ref)">AddToFav</button>
+        </div>
+    </div>
+</div>
+
