@@ -21,8 +21,9 @@ export class SearchMovieComponent implements OnInit {
 this.movieService.searchMovies(this.query).subscribe(ref=>{
   console.log(ref);
   this.ref=ref;
+  this.onVoted.emit(this.ref);
 });
-this.onVoted.emit(this.ref);
+
     }
   }
 

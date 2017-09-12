@@ -15,6 +15,8 @@ import { FeaturedMovieComponent } from './featured-movie/featured-movie.componen
 import { ListComponent } from './list/list.component';
 import { DisplayComponent } from './display/display.component';
 import { ParentMoviComponent } from './parent-movi/parent-movi.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ParentMoviComponent } from './parent-movi/parent-movi.component';
     FeaturedMovieComponent,
     ListComponent,
     DisplayComponent,
-    ParentMoviComponent
+    ParentMoviComponent,
+    LoginComponent,
+    SignupComponent
   
    
  

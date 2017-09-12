@@ -1,44 +1,48 @@
 
-<div class="container-fluid " id="con">
-  <header style="background-image: url('../back.jpg');">
-    <div class="overlay"></div>
-    <!-- navigation -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <button type="button" class=" navbar navbar-toggleable-md" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
-            <span class="navbar-toggler-icon"></span>
-          
-          </button>
-          <div class="navbar-brand" ><strong>{{title}}</strong></div>
-        </div>
-     
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="navbar-nav mr-auto">
-            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-            <li><a routerLink="/movie">Movies-Now</a></li>
-            <li><a routerLink="/favourite-list">Favourite-List</a></li>
-            <li><a routerLink="/parent-movi">Search-Movie</a></li>
-            <li><a href="#">Login/SignUp</a></li>
+    <nav class="navbar navbar-inverse bg-inverse mynav ">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
+            <img src="../favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            {{title}}
+          </a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/home" >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/movie">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " routerLink="/parent-movi">Search-Movie</a>
+              </li>
+            <li class="nav-item">
+                
+              <a class="nav-link " routerLink="/favourite-list">Favourite-List</a>
+            </li>
           
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav><!-- /navigation -->
-  </header> 
- 
+          
+          <!-- <form class="form-inline my-2 my-lg-0">
+              <i class="fa fa-user"></i>
+            <div class=" my-2 my-sm-0" ><a  routerLink="/login">Login</a></div>
+          </form>   -->
+        </div>
+      </nav>
 
- 
+
+
+ <div class="container-fluid outlet">
  
     <router-outlet></router-outlet>   
-
+ </div>
     
  
  <!--footer-->
-</div>
+
  <footer >
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <div class="container-fluid bg-primary py-3">

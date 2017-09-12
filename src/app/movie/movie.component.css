@@ -6,8 +6,26 @@ a {
     color:wheat;;
     text-decoration: none;
 }
-#now
+/* #now
 {
     margin-top: 50px;
     
+} */
+.title-header {padding: .75rem 1.25rem; background-color: #f5f5f5; border-bottom: 1px solid transparent;}
+.title-header h3 {font-size: 0.80rem; margin: 0;}
+.movies {margin-top: 2rem;}
+.img-card {width: 100%; margin-bottom: .40rem;}
+.movies {margin-bottom: .60rem;}
+
+/* .card-block{
+   
+  height: 403px;
+
+} */
+#id{
+    background-color: darkolivegreen;
+}
+.feature
+{
+  color:white;
 }

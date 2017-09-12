@@ -1,12 +1,13 @@
 .feature
 {
   color:white;
-  margin-top: 5%;
+
 }
-.mylayout
+/* .mylayout
 {
-    background-image: url(../../mylay.jpg);
-}
+    background-color: blue;
+   
+} */
 .w-100
 {
   position: relative;
